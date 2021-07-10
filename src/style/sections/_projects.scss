@@ -16,6 +16,17 @@
       margin-bottom: 0rem;
     }
 
+    .benefits-text, .benefits-list ul {
+      text-align: left;
+      font-size: medium;
+    }
+
+    .benefits-list {
+      width: fit-content;
+      margin: auto;
+      padding-bottom: 3em;
+    }
+
     .row {
       margin-bottom: 8rem;
 

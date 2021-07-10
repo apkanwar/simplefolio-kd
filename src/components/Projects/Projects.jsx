@@ -26,52 +26,26 @@ const Projects = () => {
     <section id="projects">
       <Container>
         <div className="project-wrapper">
-          <Title title="Projects" />
+          <Title title="Benefits" />
+          <p className="benefits-text">
+            As a service-focused, home financing specialist, I have the experience and expertise to
+            provide you with sound advice. I am ready to advise you from start to finish on:
+          </p>
+          <div className="benefits-list">
+            <ul>
+              <li>Applying for a pre-approved mortgage</li>
+              <li>Financing your first or next home and any renovations</li>
+              <li>Transferring your mortgage to BMO Bank of Montreal</li>
+              <li>Refinancing a mortgage loan or tapping into the equity in your current home </li>
+              <li>Or any other home financing matter</li>
+            </ul>
+          </div>
           {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
+            const { id, img1, img2, title1, title2 } = project;
 
             return (
               <Row key={id}>
-                <Col lg={4} sm={12}>
-                  <Fade
-                    left={isDesktop}
-                    bottom={isMobile}
-                    duration={1000}
-                    delay={500}
-                    distance="30px"
-                  >
-                    <div className="project-wrapper__text">
-                      <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
-                      <div>
-                        <p>
-                          {info ||
-                            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
-                        </p>
-                        <p className="mb-4">{info2 || ''}</p>
-                      </div>
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn--hero"
-                        href={url || '#!'}
-                      >
-                        See Live
-                      </a>
-
-                      {repo && (
-                        <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="cta-btn text-color-main"
-                          href={repo}
-                        >
-                          Source Code
-                        </a>
-                      )}
-                    </div>
-                  </Fade>
-                </Col>
-                <Col lg={8} sm={12}>
+                <Col lg={6} sm={12}>
                   <Fade
                     right={isDesktop}
                     bottom={isMobile}
@@ -80,30 +54,52 @@ const Projects = () => {
                     distance="30px"
                   >
                     <div className="project-wrapper__image">
-                      <a
-                        href={url || '#!'}
-                        target="_blank"
-                        aria-label="Project Link"
-                        rel="noopener noreferrer"
+                      <Tilt
+                        options={{
+                          reverse: false,
+                          max: 8,
+                          perspective: 1000,
+                          scale: 1,
+                          speed: 300,
+                          transition: true,
+                          axis: null,
+                          reset: true,
+                          easing: 'cubic-bezier(.03,.98,.52,.99)',
+                        }}
                       >
-                        <Tilt
-                          options={{
-                            reverse: false,
-                            max: 8,
-                            perspective: 1000,
-                            scale: 1,
-                            speed: 300,
-                            transition: true,
-                            axis: null,
-                            reset: true,
-                            easing: 'cubic-bezier(.03,.98,.52,.99)',
-                          }}
-                        >
-                          <div data-tilt className="thumbnail rounded">
-                            <ProjectImg alt={title} filename={img} />
-                          </div>
-                        </Tilt>
-                      </a>
+                        <div data-tilt className="thumbnail rounded">
+                          <ProjectImg alt={title1} filename={img1} />
+                        </div>
+                      </Tilt>
+                    </div>
+                  </Fade>
+                </Col>
+                <Col lg={6} sm={12}>
+                  <Fade
+                    right={isDesktop}
+                    bottom={isMobile}
+                    duration={1000}
+                    delay={1000}
+                    distance="30px"
+                  >
+                    <div className="project-wrapper__image">
+                      <Tilt
+                        options={{
+                          reverse: false,
+                          max: 8,
+                          perspective: 1000,
+                          scale: 1,
+                          speed: 300,
+                          transition: true,
+                          axis: null,
+                          reset: true,
+                          easing: 'cubic-bezier(.03,.98,.52,.99)',
+                        }}
+                      >
+                        <div data-tilt className="thumbnail rounded">
+                          <ProjectImg alt={title2} filename={img2 || ''} />
+                        </div>
+                      </Tilt>
                     </div>
                   </Fade>
                 </Col>

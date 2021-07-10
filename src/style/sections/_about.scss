@@ -19,6 +19,12 @@
   }
 
   .about-wrapper {
+    .sub-title {
+      color: black;
+      text-align: left;
+      font-weight: bolder;
+    }
+
     @include respond(phone) {
       padding-bottom: 5rem;
     }

@@ -9,57 +9,46 @@ export const headData = {
 
 // HERO DATA
 export const heroData = {
-  title: '',
-  name: '',
-  subtitle: '',
+  title: 'Hi, my name is',
+  name: 'Kanwardeep Kanwar',
+  subtitle: 'BMO Mortgage Specialist',
   cta: '',
 };
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'profile.jpg',
-  paragraphOne: '',
-  paragraphTwo: '',
-  paragraphThree: '',
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  img: 'profile.png',
+  subTitle: 'How Can I Assist You?',
+  paragraphOne:
+    "Whether you are purchasing a first home or your next home, choosing the right mortgage is an important undertaking. I am committed to helping you find the right financing to suit your needs and to make your mortgage experience as uncomplicated as possible. Let's set an appointment for a time and place that is convenient and get started.",
+  paragraphTwo:
+    'With access to competitive borrowing solutions, I can help you understand your options and find the right solution to suit your unique needs.',
+  paragraphThree: 'To get started - contact me today!',
 };
 
-// PROJECTS DATA
+// BENEFITS DATA
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    img1: 'rates.png',
+    img2: 'renoPlans.png',
+    title1: '1',
+    title2: '2',
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    img1: 'refiance.png',
+    img2: 'project.jpg',
+    title1: '1',
+    title2: '2',
   },
 ];
 
 // CONTACT DATA
 export const contactData = {
-  cta: '',
-  btn: '',
-  email: '',
+  cta1: "I'm always available to take your call and reply to your email.",
+  cta2: 'Contact me anytime to book an appointment.',
+  email: 'kanwardeep.kanwar@bmo.com',
 };
 
 // FOOTER DATA
@@ -68,27 +57,17 @@ export const footerData = {
     {
       id: nanoid(),
       name: 'twitter',
-      url: '',
-    },
-    {
-      id: nanoid(),
-      name: 'codepen',
-      url: '',
+      url: 'https://twitter.com/kdkanwar',
     },
     {
       id: nanoid(),
       name: 'linkedin',
-      url: '',
+      url: 'https://ca.linkedin.com/in/mortgagewithkd',
     },
     {
       id: nanoid(),
-      name: 'github',
-      url: '',
+      name: 'facebook',
+      url: 'https://www.facebook.com/kd.bmo/',
     },
   ],
-};
-
-// Github start/fork buttons
-export const githubButtons = {
-  isEnabled: true, // set to false to disable the GitHub stars/fork buttons
 };
