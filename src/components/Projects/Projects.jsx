@@ -46,13 +46,7 @@ const Projects = () => {
             return (
               <Row key={id}>
                 <Col lg={6} sm={12}>
-                  <Fade
-                    right={isDesktop}
-                    bottom={isMobile}
-                    duration={1000}
-                    delay={1000}
-                    distance="30px"
-                  >
+                  <Fade right={isDesktop} bottom={isMobile} duration={500} distance="30px">
                     <div className="project-wrapper__image">
                       <Tilt
                         options={{
@@ -75,13 +69,7 @@ const Projects = () => {
                   </Fade>
                 </Col>
                 <Col lg={6} sm={12}>
-                  <Fade
-                    right={isDesktop}
-                    bottom={isMobile}
-                    duration={1000}
-                    delay={1000}
-                    distance="30px"
-                  >
+                  <Fade right={isDesktop} bottom={isMobile} duration={500} distance="30px">
                     <div className="project-wrapper__image">
                       <Tilt
                         options={{
@@ -97,7 +85,7 @@ const Projects = () => {
                         }}
                       >
                         <div data-tilt className="thumbnail rounded">
-                          <ProjectImg alt={title2} filename={img2 || ''} />
+                          <ProjectImg alt={title2} filename={img2 || null} />
                         </div>
                       </Tilt>
                     </div>

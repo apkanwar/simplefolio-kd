@@ -28,7 +28,7 @@ const About = () => {
         <Title title="About Me" />
         <Row className="about-wrapper">
           <Col md={7} sm={12}>
-            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+            <Fade left={isDesktop} bottom={isMobile} duration={500} distance="30px">
               <div className="about-wrapper__info">
                 <h2 className="sub-title">{subTitle}</h2>
                 <p className="about-wrapper__info-text">{paragraphOne}</p>
@@ -45,7 +45,7 @@ const About = () => {
             </Fade>
           </Col>
           <Col md={5} sm={12}>
-            <Fade bottom duration={1000} delay={600} distance="30px">
+            <Fade bottom duration={500} distance="30px">
               <div className="about-wrapper__image">
                 <AboutImg alt="profile picture" filename={img} />
               </div>

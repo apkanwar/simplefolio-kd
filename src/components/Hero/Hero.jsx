@@ -3,10 +3,11 @@ import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
+import HeroImg from '../Image/HeroImg';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
-  const { title, name, subtitle, cta } = hero;
+  const { title, name, subtitle, cta, img } = hero;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -36,10 +37,15 @@ const Header = () => {
           <p className="hero-cta">
             <span className="cta-btn cta-btn--hero">
               <Link to="about" smooth duration={1000}>
-                {cta || 'Know more'}
+                {cta}
               </Link>
             </span>
           </p>
+        </Fade>
+        <Fade bottom duration={1000} delay={600} distance="30px">
+          <div className="hero-wrapper__image ">
+            <HeroImg alt="tag-image" filename={img} />
+          </div>
         </Fade>
       </Container>
     </section>

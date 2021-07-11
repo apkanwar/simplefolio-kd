@@ -12,7 +12,8 @@ export const heroData = {
   title: 'Hi, my name is',
   name: 'Kanwardeep Kanwar',
   subtitle: 'BMO Mortgage Specialist',
-  cta: '',
+  cta: 'Know More',
+  img: 'rateCover.png',
 };
 
 // ABOUT DATA
@@ -38,7 +39,7 @@ export const projectsData = [
   {
     id: nanoid(),
     img1: 'refiance.png',
-    img2: 'project.jpg',
+    img2: null,
     title1: '1',
     title2: '2',
   },
