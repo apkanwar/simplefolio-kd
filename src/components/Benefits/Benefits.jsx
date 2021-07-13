@@ -27,19 +27,6 @@ const Benefits = () => {
       <Container>
         <div className="project-wrapper">
           <Title title="Benefits" />
-          <p className="benefits-text">
-            As a service-focused, home financing specialist, I have the experience and expertise to
-            provide you with sound advice. I am ready to advise you from start to finish on:
-          </p>
-          <div className="benefits-list">
-            <ul>
-              <li>Applying for a pre-approved mortgage</li>
-              <li>Financing your first or next home and any renovations</li>
-              <li>Transferring your mortgage to BMO Bank of Montreal</li>
-              <li>Refinancing a mortgage loan or tapping into the equity in your current home </li>
-              <li>Or any other home financing matter</li>
-            </ul>
-          </div>
           {benefits.map((benefit) => {
             const { id, img1, img2, title1, title2 } = benefit;
 
