@@ -4,10 +4,10 @@ import Tilt from 'react-tilt';
 import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
-import ProjectImg from '../Image/ProjectImg';
+import BenefitsImg from '../Image/BenefitsImg';
 
-const Projects = () => {
-  const { projects } = useContext(PortfolioContext);
+const Benefits = () => {
+  const { benefits } = useContext(PortfolioContext);
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -40,8 +40,8 @@ const Projects = () => {
               <li>Or any other home financing matter</li>
             </ul>
           </div>
-          {projects.map((project) => {
-            const { id, img1, img2, title1, title2 } = project;
+          {benefits.map((benefit) => {
+            const { id, img1, img2, title1, title2 } = benefit;
 
             return (
               <Row key={id}>
@@ -62,7 +62,7 @@ const Projects = () => {
                         }}
                       >
                         <div data-tilt className="thumbnail rounded">
-                          <ProjectImg alt={title1} filename={img1} />
+                          <BenefitsImg alt={title1} filename={img1} />
                         </div>
                       </Tilt>
                     </div>
@@ -85,7 +85,7 @@ const Projects = () => {
                         }}
                       >
                         <div data-tilt className="thumbnail rounded">
-                          <ProjectImg alt={title2} filename={img2 || null} />
+                          <BenefitsImg alt={title2} filename={img2 || null} />
                         </div>
                       </Tilt>
                     </div>
@@ -100,4 +100,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Benefits;
