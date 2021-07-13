@@ -9,14 +9,11 @@ const Reviews = () => {
         <div className="project-wrapper">
           <Title title="Reviews" />
           {/* Google Reviews */}
-          <div className="tage_container tagembed-container">
-            <div
-              className="tagembed-socialwall"
-              data-wall-id="7704"
-              view-url="https://widget.tagembed.com/7704?view"
-            />
-            <script src="//widget.tagembed.com/embed.min.js" type="text/javascript" />
-          </div>
+          <div data-romw-token="A6MgNg612OoQXL7t5FXCR1lHFltMyM2RQrrIrcXvFleEsnbNjQ" />
+          <script
+            src="https://reviewsonmywebsite.com/js/v2/embed.js?id=c338ae55b38e487f19ae"
+            type="text/javascript"
+          />
           {/* Twitter Feed */}
           <a
             className="twitter-timeline"
