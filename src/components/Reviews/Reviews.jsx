@@ -9,8 +9,10 @@ const Reviews = () => {
         <div className="project-wrapper">
           <Title title="Reviews" />
           {/* Google Reviews */}
-          <div data-romw-token="A6MgNg612OoQXL7t5FXCR1lHFltMyM2RQrrIrcXvFleEsnbNjQ"></div>
-          <script src="https://reviewsonmywebsite.com/js/v2/embed.js?id=c338ae55b38e487f19ae" type="text/javascript"></script>
+          <div
+            className="google-reviews"
+            data-romw-token="A6MgNg612OoQXL7t5FXCR1lHFltMyM2RQrrIrcXvFleEsnbNjQ"
+          />
           {/* Twitter Feed */}
           <a
             className="twitter-timeline"
@@ -20,9 +22,14 @@ const Reviews = () => {
           >
             Tweets by KDKanwar
           </a>{' '}
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8" />
         </div>
       </Container>
+
+      <script
+        src="https://reviewsonmywebsite.com/js/v2/embed.js?id=c338ae55b38e487f19ae"
+        type="text/javascript"
+      />
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8" />
     </section>
   );
 };
