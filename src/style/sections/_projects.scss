@@ -15,22 +15,13 @@
       margin-bottom: 0rem;
     }
 
-    .benefits-text, .benefits-list ul {
-      text-align: left;
-      font-size: medium;
-    }
-
-    .benefits-list {
-      width: fit-content;
-      margin: auto;
-      padding-bottom: 3em;
-    }
-
     .row {
       margin-bottom: 8rem;
-
+      @include respond(tab-land) {
+        margin-bottom: 0rem;
+      }
       @include respond(phone) {
-        margin-bottom: 4rem;
+        margin-bottom: 0rem;
       }
     }
 
@@ -61,7 +52,7 @@
 
     &__image {
       width: 90%;
-      margin: 0 auto;
+      margin: 15px auto !important;
 
       @include respond(tab-land) {
         width: 100%;

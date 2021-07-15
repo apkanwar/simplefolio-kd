@@ -15,21 +15,51 @@
         margin-bottom: 0rem;
       }
 
-      .google-reviews {
-        width: 65%;
-        float: left;
-        height: 800px;
+      .hidden {
+        position: absolute;
+        width: 1100px;
+        background-color: white;
+        margin-top: -37px;
+        height: 30px;
+        z-index: 9999999;
+        color: white
       }
-
-      .romw-copyright {
-        display: none;
+      @media screen and (max-width: 1366px) {
+        .hidden {
+          width: 90%;
+        }
       }
-
-      .twitter-timeline {
-        width: 30%;
-        float: right;
-        height: 800px !important;
-      }
+      // @media screen and (max-width: 1210px) {
+      //   .test {
+      //     width: 915px;
+      //   }
+      // }
+      // @media screen and (max-width: 991px) {
+      //   .test {
+      //     width: 690px;
+      //   }
+      // }
+      // @media screen and (max-width: 767px) {
+      //   .test {
+      //     width: 510px;
+      //   }
+      // }
+      // @media screen and (max-width: 520px) {
+      //   .test {
+      //     width: 490px;
+          
+      //   }
+      // }
+      // @media screen and (max-width: 375px) {
+      //   .test {
+      //     width: 325px;
+      //   }
+      // }
+      // @media screen and (max-width: 375px) {
+      //   .test {
+      //     width: 325px;
+      //   }
+      // }
   
       .row {
         margin-bottom: 8rem;
