@@ -28,7 +28,7 @@ export const aboutData = {
 };
 
 // BENEFITS DATA
-export const projectsData = [
+export const benefitsData = [
   {
     id: nanoid(),
     img1: 'rates.png',
