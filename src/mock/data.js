@@ -7,6 +7,15 @@ export const headData = {
   description: '', // e.g: Welcome to my website
 };
 
+// CALCULATOR DATA
+export const calcData = {
+  title: 'Hi, my name is',
+  name: 'Kanwardeep Kanwar',
+  subtitle: 'BMO Mortgage Specialist',
+  cta: 'Know More',
+  img: 'rateCover.png',
+};
+
 // HERO DATA
 export const heroData = {
   title: 'Hi, my name is',
